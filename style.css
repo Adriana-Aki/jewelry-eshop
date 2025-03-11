@@ -3,11 +3,6 @@ body {
   color: #504b38;
 }
 
-.navbar {
-  background-color: #f8f3d9;
-  box-shadow: 0px 0px 26px 8px rgba(80, 75, 56, 0.2);
-}
-
 .header-container-grid {
   display: grid;
   grid-template-columns: 1fr 2fr;
@@ -31,10 +26,12 @@ body {
   border: 1px solid rgba(80, 75, 56, 0.7);
   border-radius: 20px;
   box-shadow: 0px 0px 18px 9px rgba(80, 75, 56, 0.2);
+  text-align: center;
 }
 
 p {
   text-align: justify;
+  font-size: 20px;
 }
 
 .navigation {
@@ -47,6 +44,7 @@ p {
   background-color: #504b38;
   color: #f8f3d9;
   border-radius: 10px;
+  text-align: center;
 }
 
 .navigation a:hover {
@@ -58,6 +56,7 @@ p {
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 20px;
   text-align: center;
+  margin-bottom: 50px;
 }
 
 .promo-img {
@@ -66,9 +65,18 @@ p {
   object-fit: cover;
 }
 
+.about-us {
+  margin: 20px 0 50px 0;
+}
+
 .more-about {
   background-color: #ebe5c2;
   padding: 15px;
+}
+
+.more-about div {
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .eshop {
@@ -76,9 +84,23 @@ p {
   padding: 15px;
 }
 
+.eshop div {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
 .contact {
   background-color: #ebe5c2;
   padding: 15px;
+}
+
+.contact div {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.info {
+  padding: 0 15px;
 }
 
 .button-action {
@@ -87,16 +109,18 @@ p {
   padding: 10px 50px;
   border-radius: 15px;
   text-decoration: none;
+  font-size: 20px;
+  margin-top: 10px;
 }
 
 .footer-grid {
-  grid-gap: 60px;
   background-color: #504b38;
   color: #f8f3d9;
-  position: fixed;
-  bottom: 0;
-  left: 0;
   width: 100%;
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns: 1fr 2fr 1fr;
+  padding: 0 300px;
 }
 
 footer ul {
@@ -119,4 +143,67 @@ footer ul {
 
 .footer-info a:visited {
   color: #f8f3d9;
+}
+
+@media screen and (max-width: 480px) {
+  .header-container-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    grid-gap: 0px;
+  }
+
+  .promo-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  .footer-logo {
+    margin: auto;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+    padding: 0 50px;
+  }
+
+  .footer-info {
+    text-align: center;
+  }
+
+  .header-logo {
+    margin: 20px auto;
+  }
+
+  p {
+    font-size: 18px;
+  }
+
+  .main-logo {
+    height: 120px;
+  }
+
+  .c-img {
+    height: 200px;
+  }
+
+  .button-action {
+    padding: 10px 30px;
+  }
+
+  section {
+    padding: 10px 20px;
+  }
+
+  .navigation {
+    padding: 20px;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    font-size: 22px;
+    max-width: 90%;
+    text-align: center;
+  }
 }
