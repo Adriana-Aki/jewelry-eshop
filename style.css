@@ -8,10 +8,24 @@ body {
   box-shadow: 0px 0px 26px 8px rgba(80, 75, 56, 0.2);
 }
 
+.header-container-grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 30px;
+}
+
+.header-logo {
+  align-self: center;
+}
+.main-logo {
+  height: 200px;
+  margin: auto;
+}
+
 .c-img {
   display: block !important;
   margin: 20px auto;
-  height: 500px;
+  height: 300px;
   width: 95%;
   object-fit: cover;
   border: 1px solid rgba(80, 75, 56, 0.7);
@@ -19,10 +33,64 @@ body {
   box-shadow: 0px 0px 18px 9px rgba(80, 75, 56, 0.2);
 }
 
-.footer-grid {
+p {
+  text-align: justify;
+}
+
+.navigation {
+  font-family: "Lora", serif;
+  font-size: 30px;
+  font-weight: bold;
   display: grid;
-  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 10px;
+  background-color: #504b38;
+  color: #f8f3d9;
+  border-radius: 10px;
+}
+
+.navigation a:hover {
+  color: #b9b28a;
+}
+
+.promo-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+  text-align: center;
+}
+
+.more-about {
+  background-color: #ebe5c2;
+  padding: 15px;
+}
+
+.eshop {
+  background-color: #ebe5c2;
+  padding: 15px;
+}
+
+.contact {
+  background-color: #ebe5c2;
+  padding: 15px;
+}
+
+.button-action {
+  color: #f8f3d9;
+  background-color: #504b38;
+  padding: 10px 50px;
+  border-radius: 15px;
+  text-decoration: none;
+}
+
+.footer-grid {
   grid-gap: 60px;
+  background-color: #504b38;
+  color: #f8f3d9;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
 }
 
 footer ul {
@@ -31,14 +99,18 @@ footer ul {
   opacity: 0.8;
 }
 
-.footer-credit {
+.footer-credit p {
   text-align: center;
+}
+
+.footer-credit a:visited {
+  color: #f8f3d9;
 }
 
 .footer-info {
   text-align: end;
 }
 
-a {
-  color: #504b38;
+.footer-info a:visited {
+  color: #f8f3d9;
 }
