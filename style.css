@@ -60,6 +60,12 @@ p {
   text-align: center;
 }
 
+.promo-img {
+  height: 50px;
+  width: 50px;
+  object-fit: cover;
+}
+
 .more-about {
   background-color: #ebe5c2;
   padding: 15px;
